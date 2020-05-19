@@ -8,37 +8,35 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
     <script src="axios.js" defer></script>
-    <script src="dodajzaposlenika.js" defer></script>
-    
+    <script src="main.js" defer></script>
+    <script src="login1.js" defer></script>
 </head>
 <body>
     <div class="d-flex flex-column flex-md-row align-items-center p-3 px-md-4 mb-3 bg-white border-bottom shadow-sm">
     <h5 class="my-0 mr-md-auto font-weight-normal">Elektroničko poslovanje</h5>
     <nav class="my-2 my-md-0 mr-md-3">
       <a class="p-2 text-dark" href="zaposlenici.html">Informacije o djelatnicima</a>
-      <a class="p-2 text-dark" href="Pocetna.html">Upis gosta</a>
+      <a class="p-2 text-dark" href="ulaz.html">Upis gosta</a>
       <a class="p-2 text-dark" href="svigosti.html">Svi gosti</a>
       <a class="p-2 text-dark" href="dodajzaposlenika.html">Dodaj djelatnika</a>
-      
     </nav>
-    
   </div>
 
   
 
   <div class="pricing-header px-3 py-3 pt-md-5 pb-md-4 mx-auto text-center">
-    <h1 class="display-4 mb-5">Dodajte novog djelatnika</h1>
+    <h1 class="display-4 mb-5">Informacije o djelatnicima</h1>
     <p class="lead ">Jednostavno i brzo pretražite informacije o djelatnicima fakulteta. Možete pronaći informacije o imenu, kontakt informacije i broj ured djelatnika.</p>
-    <p class="lead  text-center">Dodajte novog zaposlenika u formi ispod.</p>   
+    <p class="lead  text-center">Molimo vas prije korištenja naše aplikacije svoje podatke ostavite ispod.</p>   
   </div>
        
 
-  <div class="container col-md-6">
+  <div class="container col-md-6 mt-5">
       
       <br>
-      <h1 class="display-4 text-center mt-5 ">Forma za upis djelatnika</h1>
+     
       <div class="col-md-6 container">
-        <br> <br>
+        <h1 class="display-4 text-center ">Upis gosta na sustav</h1>
     <form class="form" id="forma2"  action="" method="post">
         <div class="form-group">
         <label class="font-weight-bold" for="">Ime:</label>
@@ -52,16 +50,7 @@
         <label class="font-weight-bold" for="">Email:</label>
         <input class="form-control" type="text" id="email" required>
         </div>
-        <div class="form-group">   
-        <label class="font-weight-bold" for="">Smjer:</label>
-        <input class="form-control" type="text" id="smjer" required>
-        </div>
-        <div class="form-group">   
-        <label class="font-weight-bold" for="">Broj ureda:</label>
-        <input class="form-control" type="text" id="broj_u" required>
-        </div>
-
-        
+        <input  type="hidden" id="gost" value="gost" >
         <button class="btn-block btn btn-primary" type="submit">Potvrdi</button>
     
     </form>
